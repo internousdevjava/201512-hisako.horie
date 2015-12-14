@@ -1,9 +1,8 @@
 /**
  *
  */
-package hisako;
 
-public class game {
+public class KisoKadai2 {
 	public static void main(String[] args) {
 		int answer;
 		int input;
@@ -11,18 +10,16 @@ public class game {
 		System.out.println("[数当てゲーム]");
 		System.out.println("1～100の数を当てよう。");
 
-		answer = 1 + (int)(Math.random() * 100.0);
+		answer = 1 + (int) (Math.random() * 100.0);
 
-
-		while(true) {
-			counter ++;
+		while (true) {
+			counter++;
 			System.out.println("数字を入力してください");
 			int x = new java.util.Scanner(System.in).nextInt();
 
-
-			if(x < answer) {
+			if (x < answer) {
 				System.out.println(x + "よりは大きい。");
-			} else if(x > answer) {
+			} else if (x > answer) {
 				System.out.println(x + "よりは小さい。");
 			} else {
 				System.out.println("正解!");
