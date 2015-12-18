@@ -58,13 +58,14 @@ public class KisoKadai2 {
 				if (s.equals("y")) {
 					continue;
 				} else {
+					System.out.println("終わります");
 					b = false;
 				}
 			} catch (IOException e) {
 				System.out.println(e);
 			}
 		}
-		System.out.println("お疲れ");
+		System.out.println("END");
 	}
 
 }
