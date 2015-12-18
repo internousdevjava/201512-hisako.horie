@@ -19,11 +19,13 @@ public class KisoKadai2 {
 					try {
 						String s = r.readLine();
 						int ans = Integer.parseInt(s);
-						if ( ans >= 101) {
+						if ( ans >= 101 || ans < 1 ) {
 							System.out.println("数字の範囲は1から100までだよ");
+						continue;
 						}
+
 						int in = ans - i;
-						if (in < 0) {
+						if (in < 0 || ans <1 ) {
 							if (in >= -5) {
 								System.out.println("あとすこし大きい");
 							} else if (in >= -10) {
