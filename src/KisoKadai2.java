@@ -10,8 +10,8 @@ public class KisoKadai2 {
 		System.out.println("1から100までの数字を当てるゲーム");
 		System.out.println("ヒント：誤差によってコメントが異なるよ");
 		System.out.println("");
-		System.out.println("数字を入れてね");
 		while (b) {
+		System.out.println("数字を入れてね");
 			int i = (int)(Math.random() * 100) + 1;
 			try {
 				//
