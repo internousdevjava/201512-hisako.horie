@@ -21,13 +21,16 @@ import java.io.InputStreamReader;
 						String j = r.readLine();
 						int x = Integer.parseInt(i);
 						int y = Integer.parseInt(j);
-						if (x > 100 || y > 100) {
+
+						if (x > 100 || x < 1 || y > 100 || y < 1) {
 							System.out.println("数字の範囲は1から100までだよ");
 						}else{
 							for (int a = 1; a <= x; a++) {
 								for (int c = 1; c <= y; c++) {
 									System.out.print(a * c + " ");
 								}
+								System.out.println();
+
 							}
 						}
 					} catch (IOException e) {
