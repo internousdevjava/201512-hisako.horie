@@ -1,13 +1,24 @@
-public class Quadrangle{
-	public static void main(String[] args){
-
-
-	Figure s  = new Figure(9,15);
+class Quadrangle extends Figure{
 	//
+	public Quadrangle(int b, int h) {
+			super(b, h);
+		}
+
+	@Override
+	public void show(){
+		System.out.println("四角形のデータ");
+		super.show();
+}
+	@Override
+	public double getArea(){
+		return 0.0;
 
 
-	System.out.println("四角形のデータ");
-	s.show();
 
-	}
-	}
+
+/*
+    public void overridable(){
+        System.out.println( "Figure#overridable()" );
+        */
+    }
+}
